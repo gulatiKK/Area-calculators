@@ -15,6 +15,30 @@
         </style>
     </head>
     <body>
+        <button onclick="myFunction()" class="a button">Square area calculator</button>
+
+<script>
+function myFunction() {
+  location.replace("squarearea.html")
+}
+</script>
+        <button onclick="rectanglecalculatorfunction()" class="a button">Rectangle area calculator</button>
+        <button onclick="circlecalculatorfunction()" class="a button">Circle area calculator</button>
+
+        <script>
+            function rectanglecalculatorfunction(){
+                location.replace("rectangle.html")
+                }
+       
+        </script>
+
+        <script>
+            function circlecalculatorfunction(){
+                location.replace("circle.html")
+            }
+        </script>
+
+<div id="rectangle_box">
         <header id="main-header">
             <h1>Rectangle area calculator</h1>
         </header>
@@ -32,7 +56,11 @@
             <h2 id="result">Area </h2>
 
         <title>Square area</title>
-    
+
+        
+    </div>
+    <div id="square_box">
+
         <header id="main-header">
         
 <head>
@@ -55,6 +83,8 @@
 <input type="number" id="Side" name="Side" onchange="squareFunction()">
     <h2>Area</h2>
     <input type="number" id="area" name="area" >
+    </div>
+    <div id="circle_box">
     <br>
     <header id="main-header">
         
@@ -72,6 +102,7 @@
         <p>Copyright &copy; 2021, Krishna's Website</p>
         
     </footer>
+    </div>
         
 
     </body>

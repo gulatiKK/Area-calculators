@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <script src="selectdropdownfunction1.js"></script>
+    <head>
+        <title>Krishna's Area Calculators</title>
+    </head>
+    <body>
+        <p>
+            <h1>Objective</h1>
+            <p> To make a dropdown box that has the options for the area calculators and display the area calculator when the option is selected</p>
+            <ul>
+                <li>1-Show a dropdown which allows you to select the type of calculator you want</li>
+                <li>2-The moment a selection is made, calculator title must be changed</li>
+            </ul>
+            
+ 
+        <hr>
+            <select name="Areacalcselector" id="Areacalcselector"onchange="handleCalcSelection()">
+                <option value="0">Select the calculator you want</option>
+                <option value="1" >Square Area calculator</option>
+                <option value="2" >Rectangle Area calculator</option>
+                <option value="3">Circle Area calculator</option>
+            </select>
+        <h1 id="CalcTitle">No Area Calculator selected</h1>
+
+
+    <div id="circle" style="display:none">
+        <h1>The content for Circle will be shown here</h1>
+        write yor input and buttons and display here
+    
+    
+    
+    
+    </div>
+    <div id="rectangle" style="display:none"><h1>The content for Rectangle will be shown here</h1></div>
+    <div id="square" style="display:none"><h1>The content for Square will be shown here</h1></div>
+    </body>
+
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Square area</title>
+        <meta name="description" content="Awesome blog by Krishna">
+        <meta name="keywords" content="web design blog, web dev blog,Krishna">
+        <style type="text/css">
+        #main-header{
+            text-align:center;
+            background-color:black;
+            color:aqua;
+            padding:10px;
+        }
+
+        #main-footer{
+            text-align: center;
+            font-size:18px;
+        }
+        </style>
+    </head>
+    <body>
+        <header id="main-header">
+            <h1>Krishna's Square area calculator</h1>
+        </header>
+        <a href="htmlcourse.html">Go to html course</a>
+
+        <aside>
+            <h3>Square</h3>
+            <label for="Side">Side of square:</label>
+<input type="number" id="Side" name="Side" onchange="myFunction()">
+            <br>
+            <h2>Area </h2>
+            <input type="number" id="area" name="area" >
+        
+        <footer id="Main-footer">
+            <p>Copyright &copy; 2021, Krishna's Website</p>
+        </footer>
+        <script>
+                function myFunction() {
+                  var x = document.getElementById("Side");
+                  var area = document.getElementById('area');
+                 area.value = x.value * x.value ;
+                  //x.value = x.value.toUpperCase();
+                }
+                </script>
+    </body>
+</html>
